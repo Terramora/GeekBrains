@@ -44,7 +44,7 @@ def create_json(js):
         for i, row in enumerate(js):
             new_json.append(json.dumps(row, ensure_ascii=False))
         print(new_json)
-        print(new_json, file=f1)
+        print(str(new_json).replace("'", ''), file=f1)
 
 
 get_data_company()
